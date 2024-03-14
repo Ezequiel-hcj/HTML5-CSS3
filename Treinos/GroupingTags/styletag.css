@@ -1,0 +1,73 @@
+/* Reset de estilos padrão do navegador para garantir consistência */
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Estilos globais */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/* Estilos da navegação */
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos do conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos das seções */
+h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Estilos dos artigos */
+article {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #0066cc;
+}
+
+.conteudo {
+  margin-top: 10px;
+}
+
+/* Estilos do aside */
+#escritor {
+  font-style: italic;
+  color: #666;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Responsiva</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 2em;
+      margin: 20px 0;
+      animation: changeColor 5s linear infinite;
+    }
+
+    @keyframes changeColor {
+      0% {
+        color: red;
+      }
+      25% {
+        color: orange;
+      }
+      50% {
+        color: yellow;
+      }
+      75% {
+        color: green;
+      }
+      100% {
+        color: blue;
+      }
+    }
+
+    @keyframes changeZebra {
+      0% {
+        background-color: #ffffff;
+      }
+      50% {
+        background-color: gray;
+      }
+      100% {
+        background-color: #ffffff;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+    }
+
+    caption {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding: 20px;
+    }
+
+    thead,
+    tfoot {
+      color: white;
+      background-color: rgb(0, 0, 0);
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    td.num {
+      text-align: right;
+    }
+
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    tbody > tr:nth-child(odd) {
+      background-color: rgb(255, 255, 255);
+      animation: changeZebra 4.5s reverse infinite;
+    }
+
+    tbody > tr:nth-child(even) {
+      background-color: lightgray;
+      animation: changeZebra 4s normal infinite;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      #container {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 15px;
+      }
+
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <h1>Tabela de Dados Responsiva</h1>
+    <div id="container">
+      <table>
+        <caption>
+          <pre>Capitais e Seus Habitantes</pre>
+        </caption>
+        <thead>
+          <tr>
+            <th>Cidades</th>
+            <th>Habitantes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brasília</td>
+            <td class="num">3.055.149</td>
+          </tr>
+          <tr>
+            <td>São Paulo</td>
+            <td class="num">12.398.905</td>
+          </tr>
+          <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">6.747.815</td>
+          </tr>
+          <tr>
+            <td>Salvador</td>
+            <td class="num">2.886.698</td>
+          </tr>
+          <tr>
+            <td>Fortaleza</td>
+            <td class="num">2.688.284</td>
+          </tr>
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="num">2.521.564</td>
+          </tr>
+          <tr>
+            <td>Manaus</td>
+            <td class="num">2.372.858</td>
+          </tr>
+          <tr>
+            <td>Curitiba</td>
+            <td class="num">1.948.626</td>
+          </tr>
+          <tr>
+            <td>Recife</td>
+            <td class="num">1.653.461</td>
+          </tr>
+          <tr>
+            <td>Goiânia</td>
+            <td class="num">1.536.097</td>
+          </tr>
+          <tr>
+            <td>Belém</td>
+            <td class="num">1.499.641</td>
+          </tr>
+          <tr>
+            <td>Porto Alegre</td>
+            <td class="num">1.485.941</td>
+          </tr>
+          <tr>
+            <td>Manaus</td>
+            <td class="num">1.384.880</td>
+          </tr>
+          <tr>
+            <td>Guarulhos</td>
+            <td class="num">1.381.445</td>
+          </tr>
+          <tr>
+            <td>Campinas</td>
+            <td class="num">1.242.568</td>
+          </tr>
+          <tr>
+            <td>São Luís</td>
+            <td class="num">1.110.308</td>
+          </tr>
+          <tr>
+            <td>Natal</td>
+            <td class="num">898.317</td>
+          </tr>
+          <tr>
+            <td>Teresina</td>
+            <td class="num">869.045</td>
+          </tr>
+          <tr>
+            <td>Cuiabá</td>
+            <td class="num">618.124</td>
+          </tr>
+          <tr>
+            <td>João Pessoa</td>
+            <td class="num">817.511</td>
+          </tr>
+          <tr>
+            <td>Florianópolis</td>
+            <td class="num">508.826</td>
+          </tr>
+          <tr>
+            <td>Aracaju</td>
+            <td class="num">664.908</td>
+          </tr>
+          <tr>
+            <td>Vitória</td>
+            <td class="num">362.097</td>
+          </tr>
+          <tr>
+            <td>Goiania</td>
+            <td class="num">1.536.097</td>
+          </tr>
+          <tr>
+            <td>São José dos Campos</td>
+            <td class="num">731.629</td>
+          </tr>
+          <tr>
+            <td>Rio Branco</td>
+            <td class="num">413.418</td>
+          </tr>
+          <tr>
+            <td>Teresina</td>
+            <td class="num">869.045</td>
+          </tr>
+          <tr>
+            <td>Campo Grande</td>
+            <td class="num">912.575</td>
+          </tr>
+          <tr>
+            <td>Macapá</td>
+            <td class="num">517.600</td>
+          </tr>
+          <tr>
+            <td>João Pessoa</td>
+            <td class="num">817.511</td>
+          </tr>
+          <tr>
+            <td>Maceió</td>
+            <td class="num">1.028.672</td>
+          </tr>
+          <tr>
+            <td>Boa Vista</td>
+            <td class="num">419.652</td>
+          </tr>
+          <tr>
+            <td>Palmas</td>
+            <td class="num">306.296</td>
+          </tr>
+          <tr>
+            <td>Rio Branco</td>
+            <td class="num">413.418</td>
+          </tr>
+          <tr>
+            <td>Porto Velho</td>
+            <td class="num">539.354</td>
+          </tr>
+          <tr>
+            <td>Florianópolis</td>
+            <td class="num">508.826</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <td class="num">61.699.616</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
